@@ -22,6 +22,34 @@
 
         console.log(output)
         alert(output)
+
+
+            // 변수를 선언합니다
+        let output2 = '';
+        const size = 5
+
+        // 반복합니다
+        for (let i = 1; i <= size; i++) { // size만큼 반복
+            for (let j = size; j > i; j--) { // size만큼 반복해서 점점 줄어들게 함
+                output2 += ' ';
+            }
+            for (let k = 0; k < 2*i - 1; k++) {
+                output2 += '*';
+            }
+            output2 += '\n';
+        }
+        for (let i = size-1; i > 0; i--) {
+            for (let j = size; j > i; j--) {
+                output2 += ' ';
+            }
+            for (let k = 0; k < 2*i - 1; k++) {
+                output2 += '*';
+            }
+            output2 += '\n';
+        }
+
+        console.log(output2)
+        alert(output2)
     </script>
 </body>
 </html>
